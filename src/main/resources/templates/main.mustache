@@ -1,0 +1,16 @@
+<html>
+<body>
+    <form method="get" action="filter">
+        <input type="text" name="name">
+        <button type="submit">Filter</button>
+    </form>
+    <div>List of files:</div>
+    <br/>
+    {{#scanResults}}
+    <div>
+        <b>{{id}}</b>
+        <span>{{name}}</span>
+    </div>
+    {{/scanResults}}
+</body>
+</html>
